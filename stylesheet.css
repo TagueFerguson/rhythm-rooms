@@ -57,7 +57,7 @@ strong, b {
 
 /* NAV BAR*/
 nav {
-	background-color: #ff34f3;
+	background-color: #2A596F;
 	position: fixed;
 	left: 0;
 	right: 0;
@@ -67,7 +67,6 @@ nav figure {
 	position: absolute;
 	top: 5px;
 	left: 50px;
-	background-color: hotpink;
 	-webkit-animation-name: slideDown;
 	-webkit-animation-duration: .25s;
 	-webkit-animation-timing-function: ease;
@@ -93,7 +92,7 @@ nav img {
 }
 nav li a {
   font-family: Arial, Helvetica, sans-serif;
-  color: #2A596F;
+  color: #fff;
   text-transform: uppercase;
   font-size: 15px;
   text-align: center;
@@ -105,30 +104,44 @@ nav li a {
 nav li a:focus,
 nav li a:hover,
 nav li a.active {
-  background-color: #2A596F;
-  color: #fff;
-}
-.mobile-menu-icon {
-	width: 35px;
-	height: 15px;
-	float: right;
-	margin: 10px 15px 10px 0;
-	cursor: pointer;
-}
-.bar1, .bar2, .bar3 {
-	width: 35px;
-	height: 5px;
-	background-color: #333;
-	margin: 6px 0;
-	transition: 0.4s;
+  background-color: #fff;
+  color: #000;
 }
 /* Navbar media query */
 @media screen and (max-width: 900px) {
 	nav {
 		position: static;
 	}
+	.mobile-menu-icon {
+		background: url('images/menu-1.png') 0 0 no-repeat;
+		width: 50px;
+		height: 50px;
+		float: right;
+		cursor: pointer;
+	}
+	/*.bar1, .bar2, .bar3 {
+		width: 35px;
+		height: 5px;
+		background-color: #333;
+		margin: 6px 0;
+		transition: 0.4s;
+	}*/
+	.mobile-menu-icon.open {
+		border-bottom: 2px;
+		border-style: dotted;
+		border-color: red;
+	}
 	.primary-nav {
 		width: 100%;
+		max-height: 0;
+		overflow: hidden;
+		-webkit-transition: all ease-in-out .35s;
+		-moz-transition: all ease-in-out .35s;
+		-o-transition: all ease-in-out .35s;
+		transition: all ease-in-out .35s;
+	}
+	.primary-nav.active {
+		max-height: 350px;
 	}
 	.primary-nav > li {
 		float: right;

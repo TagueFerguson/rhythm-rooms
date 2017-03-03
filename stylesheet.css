@@ -108,3 +108,26 @@ nav li a.active {
   background-color: #2A596F;
   color: #fff;
 }
+/* Navbar media query */
+@media screen and (max-width: 900px) {
+	nav {
+		position: static;
+	}
+	.primary-nav {
+		width: 100%;
+	}
+	.primary-nav > li {
+		float: right;
+		width: 100%;
+	}
+	.primary-nav li a {
+		text-align: right;
+		padding: 15px 25px 15px 0;
+		width: 100%;
+		font-size: 13px;
+	}
+	nav figure {
+		width: 100px;
+		top: 0;
+	}
+}

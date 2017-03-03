@@ -68,7 +68,15 @@ nav figure {
 	top: 5px;
 	left: 50px;
 	background-color: hotpink;
-}
+	-webkit-animation-name: slideDown;
+	-webkit-animation-duration: .25s;
+	-webkit-animation-timing-function: ease;
+	}
+	@-webkit-keyframes slideDown{
+		0% {-webkit-transform: translateY(0%); opacity: 0;}
+		50% {-webkit-transform: translateY(50%);}
+		100% {-webkit-transform: translateY(0%); opacity:1;}
+	}
 nav img {
   width: 160px;
 }

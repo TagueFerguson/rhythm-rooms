@@ -295,6 +295,31 @@ PICTURE BREAK
 	height: 100%;
 }
 /**************************************
+ABOUT
+**************************************/
+.about-section-wrapper {
+	padding-top: 50px;
+	background-color: #B0553D;
+	text-align: center;
+}
+.about-section-profile {
+	width: 80%;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+.about-section-profile img {
+	width: 200px;
+	border-radius: 50%;
+}
+.about-section-profile h1 {
+	font-family: "League Gothic", Arial, Helvetica, sans-serif;
+	font-size: 80px;
+}
+.about-section-profile p {
+	padding-top: 20px;
+	font-size: 25px;
+}
+/**************************************
 FOOTER
 **************************************/
 .footer {

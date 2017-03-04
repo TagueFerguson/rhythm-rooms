@@ -353,9 +353,29 @@ CONTACT
 .contact-details h1 {
 	font-family: "League Gothic", Arial, Helvetica, sans-serif;
 	font-size: 70px;
+	width: 100%;
 }
 .contact-details p:last-child {
 	color: #B0903D;
+}
+/* contact media query */
+@media screen and (max-width:900px) {
+	.contact-wrapper {
+		width: 80%;
+		padding-left: 10%;
+		padding-right: 10%;
+		text-align: center;
+	}
+	.soundcloud-iframe {
+		float: none;
+		padding: 0 0 0 0;
+		width: 100%;
+	}
+	.contact-details {
+		float: none;
+		padding: 0 0 0 0;
+		width: 100%;
+	}
 }
 /**************************************
 FOOTER

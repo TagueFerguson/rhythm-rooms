@@ -43,7 +43,6 @@
           <li><a href="#">About</a></li>
         </ul>
     </nav>
-
     <!--
     ======================
     SLIDESHOW
@@ -68,27 +67,12 @@
       <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-  <script>
-    var slideIndex = 1;
-
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-
-    function showSlides(n) {
-      var slides = document.getElementsByClassName("slides");
-      if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
-      for (var i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      slides[slideIndex-1].style.display = "block";
-    }
-
-    showSlides(slideIndex);
-  </script>
-
-    <footer class="footer">
+    <!--
+    ========================
+    FOOTER
+    ========================
+    -->
+    <footer class="footer grouping">
       <div class="footer-nav">
         <ul>
           <li><a href="#">Audio</a></li>
@@ -105,5 +89,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/slideshow.js"></script>
+
   </body>
 </html>

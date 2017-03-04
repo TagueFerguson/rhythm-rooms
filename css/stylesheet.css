@@ -196,17 +196,21 @@ SLIDESHOW
 }
 div div img {
 	width: 100%;
+	height: 100%;
 }
 .slides {
 	display: none;
+}
+.slides img {
+	width: 1366px;
+	height: 768px;
 }
 /* Arrow buttons */
 .previous, .next {
 	cursor: pointer;
 	position: absolute;
-	top: 50%;
+	top: 30%;
 	width: auto;
-	margin-top: 22px;
   padding: 16px;
   color: black;
   font-weight: bold;
@@ -237,10 +241,10 @@ div div img {
 FOOTER
 **************************************/
 .footer {
-  position: absolute;
+  /*position: absolute;
   right: 0;
   bottom: 0;
-  left: 0;
+  left: 0;*/
   padding: 1rem;
   background-color: #2A596F;
 	text-align: center;

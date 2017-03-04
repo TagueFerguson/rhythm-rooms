@@ -43,8 +43,47 @@
           <li><a href="#">About</a></li>
         </ul>
     </nav>
+    <!--
+    ======================
+    SLIDESHOW
+    ======================
+    -->
+    <div class="slideshow-wrapper">
+      <div class="slides">
+        <img src="images/dj.jpg" />
+        <div class="text">
+          <h2>Header</h2>
+          <p>This is the text before the header</p>
+          <button>Link to page</button>
+        </div>
+      </div>
+      <div class="slides">
+        <img src="images/remote_life.jpg" />
+        <div class="text">
+          <h2>Header</h2>
+          <p>This is the text before the header</p>
+          <button>Link to page</button>
 
-    <footer class="footer">
+        </div>
+      </div>
+      <div class="slides">
+        <img src="images/logo.png" />
+        <div class="text">
+          <h2>Header</h2>
+          <p>This is the text before the header</p>
+          <button>Link to page</button>
+
+        </div>
+      </div>
+      <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <!--
+    ========================
+    FOOTER
+    ========================
+    -->
+    <footer class="footer grouping">
       <div class="footer-nav">
         <ul>
           <li><a href="#">Audio</a></li>
@@ -61,5 +100,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/slideshow.js"></script>
+
   </body>
 </html>

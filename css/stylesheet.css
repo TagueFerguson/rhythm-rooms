@@ -283,6 +283,17 @@ ABOUT
 		font-size: 15px;
 	}
 }
+/*************************************
+PICTURE BREAK
+*************************************/
+.picture-break-wrapper {
+	padding-top: 50px;
+	height: 300px;
+}
+.picture-break-wrapper img {
+	width: 100%;
+	height: 100%;
+}
 /**************************************
 FOOTER
 **************************************/

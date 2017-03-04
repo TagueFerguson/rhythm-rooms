@@ -208,7 +208,7 @@ div div img {
 .previous, .next {
 	cursor: pointer;
 	position: absolute;
-	top: 30%;
+	top: 300px;
 	width: auto;
   padding: 16px;
   color: black;
@@ -217,7 +217,7 @@ div div img {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
 }
-.prev:hover, .next:hover {
+.previous:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
 .next {
@@ -231,14 +231,35 @@ div div img {
 	font-size: 20px;
 	padding: 8px 12px;
 	position: absolute;
-	top: 30%;
+	top: 300px;
 	left: 0;
 	right: 0;
 	text-align: center;
 }
 .text h2 {
 	font-size: 70px;
-	font-family: "League Gothic"
+	font-family: "League Gothic", Arial, Helvetica, sans-serif;
+}
+/**************************************
+ABOUT
+**************************************/
+.about-wrapper {
+	width: 100%;
+	padding-top: 50px;
+}
+.about-header {
+	float: left;
+	width: 20%;
+	padding-left: 10%;
+	font-size: 70px;
+	font-family: "League Gothic", Arial, Helvetica, sans-serif;
+}
+.about-text {
+	font-family: Helvetica, sans-serif;
+	font-size: 18px;
+	width: 60%;
+	padding-right: 10%;
+	float: right;
 }
 /**************************************
 FOOTER
@@ -251,6 +272,7 @@ FOOTER
   padding: 1rem;
   background-color: #2A596F;
 	text-align: center;
+	clear: both;
 }
 .footer-nav {
 	padding-top: 30px;

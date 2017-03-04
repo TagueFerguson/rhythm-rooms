@@ -190,8 +190,47 @@ nav li a.active {
 /**************************************
 SLIDESHOW
 **************************************/
+.slideshow-wrapper {
+	box-sizing: border-box;
+	margin: auto;
+}
 div div img {
 	width: 100%;
+}
+.slides {
+	display: none;
+}
+/* Arrow buttons */
+.previous, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: 22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* text */
+.slides p, .slides h2{
+	color: #f2f2f2;
+	font-size: 20px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
 }
 
 /**************************************
@@ -203,7 +242,7 @@ FOOTER
   bottom: 0;
   left: 0;
   padding: 1rem;
-  background-color: #2a596f;
+  background-color: #2A596F;
 	text-align: center;
 }
 .footer-nav {

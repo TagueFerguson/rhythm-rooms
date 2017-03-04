@@ -52,11 +52,41 @@
     <div class="slideshow-wrapper">
       <div class="slides">
         <img src="images/dj.jpg" />
+        <p>Information on images and on link</p>
+        <h2>We run Events</h2>
       </div>
       <div class="slides">
         <img src="images/remote_life.jpg" />
+        <p>Information on images and on link</p>
+        <h2>We run Events</h2>
       </div>
+      <div class="slides">
+        <img src="images/remote_life.jpg" />
+        <p>extra picture to check arrows are working</p>
+        <h2>Don't know any text</h2>
+      </div>
+      <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
+  <script>
+    var slideIndex = 1;
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+      var slides = document.getElementsByClassName("slides");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (var i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[slideIndex-1].style.display = "block";
+    }
+
+    showSlides(slideIndex);
+  </script>
 
     <footer class="footer">
       <div class="footer-nav">

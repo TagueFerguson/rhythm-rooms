@@ -331,6 +331,33 @@ SECOND PICTURE BREAK
 	height: 100%;
 }
 /**************************************
+CONTACT
+**************************************/
+.contact-wrapper {
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.soundcloud-iframe {
+	float: left;
+	padding-left: 10%;
+	width: 55%;
+}
+.contact-details {
+	float: right;
+	padding-right: 10%;
+	padding-left: 5%;
+	width: 20%;
+	line-height: 2;
+}
+.contact-details h1 {
+	font-family: "League Gothic", Arial, Helvetica, sans-serif;
+	font-size: 70px;
+}
+.contact-details p:last-child {
+	color: #B0903D;
+}
+/**************************************
 FOOTER
 **************************************/
 .footer {

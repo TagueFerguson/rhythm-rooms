@@ -81,7 +81,9 @@ FONTS
     font-style: normal;
 
 }
-/* NAV BAR*/
+/****************************
+NAV BAR
+*****************************/
 nav {
 	position: fixed;
 	left: 0;
@@ -177,4 +179,43 @@ nav li a.active {
 		width: 100px;
 		top: 0;
 	}
+}
+
+/**************************************
+FOOTER
+**************************************/
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #2a596f;
+	text-align: center;
+}
+.footer-nav {
+	padding-top: 30px;
+	text-align: center;
+}
+.footer-nav li {
+	display: inline-block;
+}
+.footer-nav li a {
+	padding-left: 25px;
+}
+footer li a {
+	font-family: "League Gothic", Arial, Helvetica, sans-serif;
+  color: #000;
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+.footer-logo {
+	width: 100px;
+	height: 100px;
+	padding-top: 15px;
+}
+footer li a:focus,
+footer li a:hover,
+footer li a.active {
+	color: #fff;
 }

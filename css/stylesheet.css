@@ -179,7 +179,7 @@ nav li a.active {
 		text-align: right;
 		padding: 15px 25px 15px 0;
 		width: 100%;
-		font-size: 13px;
+		font-size: 20px;
 	}
 	nav figure {
 		width: 100px;
@@ -260,6 +260,28 @@ ABOUT
 	width: 60%;
 	padding-right: 10%;
 	float: right;
+}
+
+/* about section media query */
+@media screen and (max-width: 900px) {
+	.about-wrapper {
+		width: 90%;
+		height: 90%;
+		padding: 5% 5% 5% 5%;
+		text-align: center;
+	}
+	.about-header {
+		float: none;
+		width: 100%;
+		padding-left: 0;
+		font-size: 50px;
+	}
+	.about-text {
+		float: none;
+		width: 100%;
+		padding-right: 0;
+		font-size: 15px;
+	}
 }
 /**************************************
 FOOTER

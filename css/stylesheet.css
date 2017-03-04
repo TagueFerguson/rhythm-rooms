@@ -241,20 +241,20 @@ div div img {
 	font-family: "League Gothic", Arial, Helvetica, sans-serif;
 }
 /**************************************
-ABOUT
+MAIN
 **************************************/
-.about-wrapper {
+.main-wrapper {
 	width: 100%;
 	padding-top: 50px;
 }
-.about-header {
+.main-header {
 	float: left;
 	width: 20%;
 	padding-left: 10%;
 	font-size: 70px;
 	font-family: "League Gothic", Arial, Helvetica, sans-serif;
 }
-.about-text {
+.main-text {
 	font-family: Helvetica, sans-serif;
 	font-size: 18px;
 	width: 60%;
@@ -262,21 +262,21 @@ ABOUT
 	float: right;
 }
 
-/* about section media query */
+/* main section media query */
 @media screen and (max-width: 900px) {
-	.about-wrapper {
+	.main-wrapper {
 		width: 90%;
 		height: 90%;
 		padding: 5% 5% 5% 5%;
 		text-align: center;
 	}
-	.about-header {
+	.main-header {
 		float: none;
 		width: 100%;
 		padding-left: 0;
 		font-size: 50px;
 	}
-	.about-text {
+	.main-text {
 		float: none;
 		width: 100%;
 		padding-right: 0;

@@ -145,7 +145,7 @@ nav li a.active {
 /* Navbar media query */
 @media screen and (max-width: 900px) {
 	nav {
-		position: static;
+		position: fixed;
 	}
 	.mobile-menu-icon {
 		background: url('../images/menu-1.png') 0 0 no-repeat;
@@ -232,7 +232,8 @@ div div img {
 	padding: 8px 12px;
 	position: absolute;
 	top: 30%;
-	left: 40%;
+	left: 0;
+	right: 0;
 	text-align: center;
 }
 .text h2 {

@@ -27,6 +27,9 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+a {
+	text-decoration: none;
+}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -231,14 +234,35 @@ div div img {
 	font-size: 20px;
 	padding: 8px 12px;
 	position: absolute;
-	top: 300px;
+	top: 250px;
 	left: 0;
 	right: 0;
 	text-align: center;
 }
 .text h2 {
-	font-size: 70px;
+	font-size: 100px;
+	color: #fff;
 	font-family: "League Gothic", Arial, Helvetica, sans-serif;
+}
+.text p {
+	font-size: 30px;
+	font-weight: bold;
+}
+/*************************************
+BUTTONS
+*************************************/
+.button {
+	color: #fff;
+	border-radius: 10%;
+	font-family: "League Gothic", Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	text-align: center;
+	letter-spacing: 1.5px;
+}
+.button:focus,
+.button:hover,
+.button.active {
+	text-decoration: underline;
 }
 /**************************************
 MAIN

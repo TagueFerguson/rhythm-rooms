@@ -302,6 +302,7 @@ MAIN
 		float: none;
 		width: 100%;
 		padding-left: 0;
+		padding-top: 0;
 		font-size: 50px;
 	}
 	.main-text {

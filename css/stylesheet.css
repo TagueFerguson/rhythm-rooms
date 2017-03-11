@@ -149,6 +149,16 @@ nav li a.active {
   color: #fff;
 }
 /* Navbar media query */
+@media screen and (max-width: 1020px) {
+	nav figure {
+		width: 100px;
+		top: 0;
+	}
+	.primary-nav li a {
+		width: 175px;
+		font-size: 20px;
+	}
+}
 @media screen and (max-width: 900px) {
 	nav {
 		position: fixed;

@@ -350,6 +350,48 @@ SERVICES MAIN SECTION
 	padding-top: 2rem;
 }
 /**************************************
+SOUNDCLOUD BREAK
+**************************************/
+.soundcloud-wrapper {
+	width:80%;
+	padding: 5% 10%;
+}
+/**************************************
+CONTACT FORM
+**************************************/
+.contact-form-wrapper {
+	height: 100%;
+	background-color: #B0553D;
+	text-align: center;
+	width: 80%;
+	padding: 2% 10%;
+}
+.contact-form-wrapper h1 {
+	font-family: "League Gothic", Arial, Helvetica, sans-serif;
+	font-size: 3rem;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+/**************************************
 FOOTER
 **************************************/
 .footer {

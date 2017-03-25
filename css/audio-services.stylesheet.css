@@ -222,7 +222,6 @@ BUTTONS
 HEADER PICTURE
 **************************************/
 .top-picture-wrapper {
-	height: 400px;
 	overflow: hidden;
 }
 .top-picture-wrapper figure img {
@@ -275,6 +274,33 @@ ABOUT MAIN SECTION
 	border-radius: 50%;
 	border-style: solid;
 	border-width: 2px;
+}
+/* About main section media query */
+@media screen and (max-width: 900px) {
+	.about-section-wrapper {
+		height: 100%;
+		width: 100%;
+		text-align: center;
+		padding-top: 10%;
+		padding-right: 0;
+	}
+	.about-section-wrapper div {
+		float: none;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.about-left-content {
+		padding: 0;
+	}
+	.about-right-content {
+		padding: 0;
+		padding-top: 10%;
+	}
+	.about-right-content img {
+		width: 100%;
+		height: 19em;
+	}
 }
 /**************************************
 SERVICES MAIN SECTION
@@ -348,6 +374,52 @@ SERVICES MAIN SECTION
 }
 .services-right-content a {
 	padding-top: 2rem;
+}
+/* Services section media query */
+@media screen and (max-width: 900px) {
+	.services-wrapper {
+		text-align: center;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.services-left-content {
+		float: none;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 0;
+	}
+	.services-left-content h3 {
+		width: 100%;
+	}
+	.services-right-content {
+		float: none;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.services-right-content h1 {
+		text-align: center;
+		width: 100%;
+	}
+	.services-right-content div {
+		display: block;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0;
+	}
+	#price {
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#price p {
+		padding-top: 20%;
+	}
 }
 /**************************************
 SOUNDCLOUD BREAK
@@ -434,5 +506,8 @@ footer li a.active {
 @media screen and (max-width: 900px) {
 	.footer-nav li {
 		display: block;
+	}
+	.footer-nav li a {
+		padding-left: 0;
 	}
 }

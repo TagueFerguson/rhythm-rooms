@@ -455,9 +455,11 @@ footer li a:hover,
 footer li a.active {
 	color: #fff;
 }
-/* Navbar media query */
 @media screen and (max-width: 900px) {
 	.footer-nav li {
 		display: block;
+	}
+	.footer-nav li a {
+		padding-left: 0;
 	}
 }

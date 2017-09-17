@@ -10,6 +10,10 @@
     <!-- description -->
     <title>Rhythm Rooms</title>
 
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif|IM+Fell+Great+Primer|Playfair+Display|Roboto+Condensed" rel="stylesheet">
+
+
     <!-- stylesheet -->
     <link rel='stylesheet' href='css/stylesheet.css' />
     <!-- stylesheets for older browsers -->
@@ -25,24 +29,37 @@
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif] -->
   </head>
-  <body>
+  <body onscroll="changeNavbar()">
     <!--
     =======================
     NAV BAR
     =======================
     -->
-    <nav class="grouping">
-      <figure>
-        <img src="images/logo.png" />
-      </figure>
-      <div class="mobile-menu-icon"></div>
-        <ul class="primary-nav">
-          <li><a href='public/audio-services.html'>Audio Services</a></li>
-          <li><a href="#">Hire Gear</a></li>
-          <li><a href="#">Entertainment</a></li>
-          <li><a href="#main">About Us</a></li>
-        </ul>
+    <nav class="grouping" id="nav-bar">
+      <header>
+        <div class='navLogoWrapper'>
+          <figure>
+            <img id='logo' src="images/logo.png" />
+          </figure>
+        </div>
+        <div class="mobile-menu-icon"></div>
+        <div class="oneLineWrapper">
+          <p>Rhythm rooms - a project by Tom Percy</p>
+        </div>
+        <div class="infoWrapper">
+          <a href='mailto:info@rhythmrooms.com'>info@rhythmrooms.com</a>
+          <a href='tel:0789948734985'>078094786373</a>
+        </div>
+        <div class="navLinksWrapper">
+          <ul class="primary-nav">
+            <li><a onclick='goToAbout();'>About Tom</a></li>
+            <li><a onclick='goToServices();'>Services</a></li>
+            <li><a onclick='goToContactUs();'>Contact</a></li>
+          </ul>
+        </div>
+      </header>
     </nav>
+    <div id='heightKeeper'></div>
     <!--
     ======================
     SLIDESHOW
@@ -51,70 +68,39 @@
     <div class="slideshow-wrapper grouping">
       <div class="slides">
         <img src="images/dj.jpg" />
-        <div class="text">
-          <h2>Header</h2>
-          <p>This is the text before the header</p>
-          <a href='#' class='button'>Link to page</a>
-        </div>
       </div>
       <div class="slides">
         <img src="images/remote_life.jpg" />
-        <div class="text">
-          <h2>Header</h2>
-          <p>This is the text before the header</p>
-          <a href='#' class='button'>Link to page</a>
-
-        </div>
       </div>
       <div class="slides">
         <img src="images/logo.png" />
-        <div class="text">
-          <h2>Header</h2>
-          <p>This is the text before the header</p>
-          <a href='#' class='button'>Link to page</a>
-        </div>
       </div>
-      <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
     <!--
     ========================
     MAIN
     ========================
     -->
+    <div style='clear: both; float: left;'></div>
     <div class="main-wrapper grouping" id='main'>
-      <h1 class="main-header">All About Rhythm Rooms</h1>
-      <div class="main-text">
-        <p>
-          We have the recording studio you need. Whether you’re a solo music producer, a full-scale rock band or even a string
-          section, across our four rooms we can provide you with a world-class experience in studio recording. Maybe that’s why
-          we’re often hailed as the best Recording Studio in London. Metropolis can arrange the ultimate creative experience.
-          Harness the inspirational atmosphere created within our studios by utilising our brand new Writing Room, and be granted
-          access to our private luxury accommodation situated on top of the Power House.
-        </p>
-        <br>
-        <p>
-          With our award-winning team of Sound Engineers, our enviable selection of microphones, our abundance of kit and
-          expertise in technology (both analogue and digital), we’ll help you create exactly the sound you need.
-        </p>
-        <br>
-        <p>
-          We have four analogue consoles to choose from to mix your recording, and can also mix to visuals for our Film and TV
-          clients. In addition to stereo, we are specialists in surround sound 5.1 mixing for PCM, SACD, DVD/BD Audio, DVD and
-          Blu-ray.
-        </p>
-        <br>
-        <p>
-          Some of the most important artists of all time have recorded and mixed albums at Metropolis Studios, including Queen,
-          Michael Jackson, U2, Lady GaGa, Amy Winehouse, will.i.am, The Stone Roses, Lauryn Hill, The Verve, Adele, Rihanna and
-          many more.
-        </p>
-        <br>
-        <p>
-          However, we don’t only work with major labels, global icons and household names. We also cater for small and
-          developing artists, and those with private projects. We can tailor packages to suit your needs – check our i-Mixing
-          page for more details.
-        </p>
+      <div class='main'>
+        <h1 class="main-header">All About Rhythm Rooms</h1>
+        <div class="main-text">
+          <p>
+            We have the recording studio you need. Whether you’re a solo music producer, a full-scale rock band or even a string
+            section, across our four rooms we can provide you with a world-class experience in studio recording. Maybe that’s why
+            we’re often hailed as the best Recording Studio in London. Metropolis can arrange the ultimate creative experience.
+            Harness the inspirational atmosphere created within our studios by utilising our brand new Writing Room, and be granted
+            access to our private luxury accommodation situated on top of the Power House.
+          </p>
+          <p>
+            Some of the most important artists of all time have recorded and mixed albums at Metropolis Studios, including Queen,
+            Michael Jackson, U2, Lady GaGa, Amy Winehouse, will.i.am, The Stone Roses, Lauryn Hill, The Verve, Adele, Rihanna and
+            many more. However, we don’t only work with major labels, global icons and household names. We also cater for small and
+            developing artists, and those with private projects. We can tailor packages to suit your needs – check our i-Mixing
+            page for more details.
+          </p>
+        </div>
       </div>
     </div>
 
@@ -123,7 +109,7 @@
     PICTURE BREAK
     ========================
     -->
-    <div class="picture-break-wrapper">
+    <div class="picture-break-wrapper" id="picture-break2">
       <img src="images/desk.jpg"/>
     </div>
     <!--
@@ -153,23 +139,187 @@
     <div class="picture-break2-wrapper">
       <img src="images/studio.jpg" />
     </div>
+
+    <!--
+    ========================
+    SERVICES
+    ========================
+    -->
+    <div class='tableWrapper'>
+      <div class="top-bar-wrapper" id="services">
+        <div id="audio-services-button" class="top-bar-element selected" onclick="displayServices.call(this, 'audio-services-wrapper', 'audio-services-button');">Audio Services</div>
+        <div id="hire-gear-button" class="top-bar-element not-selected" onclick="displayServices.call(this, 'hire-gear-wrapper', 'hire-gear-button');">Hire Gear</div>
+        <div id="entertainment-button" class="top-bar-element not-selected" onclick="displayServices.call(this, 'entertainment-wrapper', 'entertainment-button');">Entertainment</div>
+      </div>
+      <div class="services-section-wrapper" id="services-section-wrapper">
+        <div class="audio-services-wrapper" id="audio-services-wrapper">
+          <!-- Left Content -->
+          <div class='services-left-content'>
+            <h1>Mixing And Mastering</h1>
+            <p>The blue studios also offer bands the opportunity to record their rehearsal via a 16 channel recorder running
+              through the room’s desk. This can be assisted or unassisted.</p>
+            <div class='mixing-and-mastering-prices'>
+              <h3>Mixing</h3>
+              <p>We set everything up for you</p>
+              <h2>£40</h2>
+            </div>
+            <div class='mixing-and-mastering-prices'>
+              <h3>Mastering</h3>
+              <p>We set everything up for you</p>
+              <h2>£40</h2>
+            </div>
+          </div>
+          <!-- Right Content -->
+          <div class='services-right-content'>
+            <h1>Recording Rates</h1>
+            <div class='service-display'>
+              <h3>Weekday Daytime</h3>
+              <div id='price'>
+                <p>&#163</p>
+                <h2>30</h2>
+              </div>
+              <p>10am - 5:30 pm</p>
+              <p>1 hour session </p>
+            </div>
+            <div class='service-display'>
+              <h3>Weekday Evening</h3>
+              <div id='price'>
+                <p>&#163</p>
+                <h2>40</h2>
+              </div>
+              <p>5:30pm - 12am</p>
+              <p>1 hour session </p>
+            </div>
+            <div class='service-display'>
+              <h3>Weekend All Day</h3>
+              <div id='price'>
+                <p>&#163</p>
+                <h2>60</h2>
+              </div>
+              <p>10am - 12pm</p>
+              <p>1 hour session </p>
+            </div>
+          </div>
+        </div>
+        <div class="hire-gear-wrapper grouping" id="hire-gear-wrapper">
+          <!-- Left Content -->
+          <div class='services-left-content'>
+            <h1>Hiring Our Gear</h1>
+            <p>The blue studios also offer bands the opportunity to record their rehearsal via a 16 channel recorder running
+              through the room’s desk. This can be assisted or unassisted.</p>
+            <div class='mixing-and-mastering-prices'>
+              <h3>Back Line</h3>
+              <p>We set everything up for you</p>
+              <h2>£40</h2>
+            </div>
+            <div class='mixing-and-mastering-prices'>
+              <h3>Single </h3>
+              <p>We set everything up for you</p>
+              <h2>£40</h2>
+            </div>
+          </div>
+          <!-- Right Content -->
+          <div class='services-right-content'>
+            <h1>Hiring Gear Rates</h1>
+            <div class='service-display'>
+              <h3>One Day</h3>
+              <div id='price'>
+                <p>&#163</p>
+                <h2>30</h2>
+              </div>
+              <p>9pm - 8pm</p>
+              <p>1 hour session </p>
+            </div>
+            <div class='service-display'>
+              <h3>Weekend</h3>
+              <div id='price'>
+                <p>&#163</p>
+                <h2>40</h2>
+              </div>
+              <p>5pm - 10pm</p>
+              <p>Friday to Sunday</p>
+            </div>
+            <div class='service-display'>
+              <h3>One Week</h3>
+              <div id='price'>
+                <p>&#163</p>
+                <h2>60</h2>
+              </div>
+              <p>10am - 12pm</p>
+              <p>1 hour session </p>
+            </div>
+          </div>
+        </div>
+        <div class="entertainment-wrapper grouping" id="entertainment-wrapper">
+            <!-- Left Content -->
+          <div class='services-left-content'>
+            <h1>Entertainment</h1>
+            <p>The blue studios also offer bands the opportunity to record their rehearsal via a 16 channel recorder running
+              through the room’s desk. This can be assisted or unassisted.</p>
+            <div class='mixing-and-mastering-prices'>
+              <h3>DJ</h3>
+              <p>We set everything up for you</p>
+              <h2>£40</h2>
+            </div>
+            <div class='mixing-and-mastering-prices'>
+              <h3>Band</h3>
+              <p>We set everything up for you</p>
+              <h2>£40</h2>
+            </div>
+          </div>
+          <!-- Right Content -->
+          <div class='services-right-content'>
+            <h1>Rates</h1>
+            <div class='service-display'>
+              <h3>Weekday Daytime</h3>
+              <div id='price'>
+                <p>&#163</p>
+                <h2>30</h2>
+              </div>
+              <p>10am - 5:30 pm</p>
+              <p>1 hour session </p>
+            </div>
+            <div class='service-display'>
+              <h3>Weekday Evening</h3>
+              <div id='price'>
+                <p>&#163</p>
+                <h2>40</h2>
+              </div>
+              <p>5:30pm - 12am</p>
+              <p>1 hour session </p>
+            </div>
+            <div class='service-display'>
+              <h3>Weekend All Day</h3>
+              <div id='price'>
+                <p>&#163</p>
+                <h2>60</h2>
+              </div>
+              <p>10am - 12pm</p>
+              <p>1 hour session </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!--
     ========================
     CONTACT
     ========================
     -->
-    <div class="contact-wrapper grouping">
+    <div class="contact-wrapper grouping" id='contactUs'>
       <iframe class="soundcloud-iframe" height="166" scrolling="no" frameborder="no"
       src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/290987001&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false">
       </iframe>
       <div class="contact-details">
         <h1>Get In Touch</h1>
-        <p>101 First line of address</p>
-        <p>Second Line</p>
-        <p>Third Line</p>
-        <p>PT234CD</p>
-        <p>Tel. 0773443534</p>
-        <p>tom@rhythmrooms.co.uk</p>
+        <ul>
+          <li>101 First line of address</li>
+          <li>Second Line</li>
+          <li>Third Line</li>
+          <li>PT234CD</li>
+          <li>Tel. 0773443534</li>
+          <li>tom@rhythmrooms.co.uk</li>
+        </ul>
       </div>
     </div>
     <!--
@@ -179,17 +329,13 @@
     -->
     <footer class="footer grouping">
       <div class="footer-nav">
+        <p class='trademark'>Trademark bullshit, you know what I mean</p>
         <ul>
-          <li><a href='public/audio-services.html'>Audio Services</a></li>
-          <li><a href="#">Hire Gear</a></li>
-          <li><a href="#">Entertainment</a></li>
-          <li><a href="#main">About Us</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Soundcloud</a></li>
+          <li><a href="#"><img src='./images/facebook.png' /></a></li>
+          <li><a href="#"><img src='./images/instagram.png' /></a></li>
+          <li><a href="#"><img src='./images/twitter.png' /></a></li>
         </ul>
       </div>
-      <img src="images/logo.png" class="footer-logo"/>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>

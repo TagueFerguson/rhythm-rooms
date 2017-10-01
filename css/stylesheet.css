@@ -406,6 +406,7 @@ SECOND PICTURE BREAK
 	height: 300px;
 	clear: both;
 	float: left;
+	width: 100%;
 }
 .picture-break2-wrapper img {
 	width: 100%;
